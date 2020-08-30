@@ -1,0 +1,25 @@
+# The .gitignore file specifies what files should be ignored by git version control
+# such as compilation output, which should be generated locally.
+
+# Ignore default build locations
+bin/
+build/
+project/
+target/
+obj/
+py/__pycache__/
+
+# Ignore executable from C++ code 
+cpp/app
+
+# Ignore class and jar files
+*.class
+*.jar
+
+# Ignore compiled Javascript files only in the ts folder
+ts/*.js
+
+# Ignore other irrelvant IDE files
+.settings/
+.classpath
+.project
