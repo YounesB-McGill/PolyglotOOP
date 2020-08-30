@@ -1,0 +1,16 @@
+namespace school;
+
+class School {
+  name;
+  1 -- * Person;
+}
+
+class Person {
+  name;
+  email;
+}
+
+class Student {
+  isA Person;
+  String[] courses;
+}
