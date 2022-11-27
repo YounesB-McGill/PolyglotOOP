@@ -1,6 +1,8 @@
 {
   "files.associations": {
-    "string": "cpp"
+    "*.jslib": "javascript",
+    "string": "cpp",
+    "iostream": "cpp"
   },
   "omnisharp.enableRoslynAnalyzers": true,
   "omnisharp.useModernNet": true

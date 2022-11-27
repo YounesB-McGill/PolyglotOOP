@@ -5,7 +5,7 @@
 #include "Student.h"
 
 #include <iostream>
-
+#include <string>
 
 int main(int argc, char* argv[]) {
   auto mcgill = School("McGill");
@@ -19,16 +19,16 @@ int main(int argc, char* argv[]) {
 
   for (auto student : students) {
     auto nCourses = student.GetCourses().size();
-    std::cout << "Hi, I'm " << student.GetName() << " and I study at " << mcgill.GetName() << "!" << std::endl;
+    std::cout << "Hi, I'm " << student.GetName() << " and I study at " << mcgill << "!" << std::endl;
     std::cout << "I'm taking ";
     if (nCourses == 0) {
       std::cout << "no courses." << std::endl;
     } else if (nCourses == 1) {
-      std::cout << "this course: " << student.GetCourses().at(0).GetName() << std::endl;
+      std::cout << "this course: " << student.GetCourses().at(0) << std::endl;
     } else {
       std::cout << nCourses << " courses:" << std::endl;
       for (auto course : student.GetCourses()) {
-        std::cout << course.GetName() << std::endl;
+        std::cout << course << std::endl;
       }
     }
   }

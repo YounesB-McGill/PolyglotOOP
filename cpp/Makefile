@@ -1,5 +1,5 @@
 .build:
-	g++ *.cpp -o app
+	g++ *.cpp -std=c++17 -o app
 
 run: .build
 	./app
