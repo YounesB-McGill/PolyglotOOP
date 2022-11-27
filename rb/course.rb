@@ -1,4 +1,4 @@
-class School
+class Course
   attr_accessor :name
 
   def initialize(name)
