@@ -2,15 +2,13 @@ namespace school
 {
   class Person
   {
-    private string name;
-    private string email;
-    public string Name => name;
-    public string Email => email;
+    public string Name { get; set; }
+    public string Email { get; set; }
 
     public Person(string name, string email)
     {
-      this.name = name;
-      this.email = email;
+      Name = name;
+      Email = email;
     }
   }
 }

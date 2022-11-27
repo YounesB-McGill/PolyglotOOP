@@ -6,32 +6,33 @@ namespace school
   class MainClass
   {
     public static void Main(string[] args) {
-      var mcgill = new School("McGill");
+      School mcgill = new("McGill");
+      Course comp251 = new("Comp251"), ecse211 = new("ECSE211"), ecse321 = new("ECSE321");
       var students = new List<Student> 
       {
-        new Student("Alice", "alice.wonderland@mail.mcgill.ca", new List<string> {"Comp251", "ECSE211", "ECSE321"}),
-        new Student("Bob", "bob.builder@mail.mcgill.ca", new List<string> {"ECSE211"}),
-        new Student("Cathy", "cathy.smith@mail.mcgill.ca", new List<string> {}),
+        new Student("Alice", "alice.wonderland@mail.mcgill.ca", new List<Course> {comp251, ecse211, ecse321}),
+        new Student("Bob", "bob.builder@mail.mcgill.ca", new List<Course> {ecse211}),
+        new Student("Cathy", "cathy.smith@mail.mcgill.ca", new List<Course> {}),
       };
 
       foreach (var student in students)
       {
         var nCourses = student.Courses.Count;
-        Console.WriteLine($"Hi, I'm {student.Name} and I study at McGill!");
+        Console.WriteLine($"Hi, I'm {student.Name} and I study at {mcgill.Name}!");
         if (nCourses == 0)
         {
           Console.WriteLine("I'm taking no courses.");
         }
         else if (nCourses == 1)
         {
-          Console.WriteLine($"I'm taking this course: {student.Courses[0]}");
+          Console.WriteLine($"I'm taking this course: {student.Courses[0].Name}");
         }
         else
         {
           Console.WriteLine("I'm taking these courses:");
           foreach (var course in student.Courses)
           {
-            Console.WriteLine(course);
+            Console.WriteLine(course.Name);
           }
         }
       } 

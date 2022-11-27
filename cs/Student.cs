@@ -2,15 +2,13 @@ using System.Collections.Generic;
 
 namespace school
 {
-  class Student:Person
+  class Student: Person
   {
-    private List<string> courses;
+    public List<Course> Courses { get; set; }
 
-    public List<string> Courses => courses;
-
-    public Student(string name, string email, List<string> courses): base(name, email)
+    public Student(string name, string email, List<Course> courses): base(name, email)
     {
-      this.courses = courses;
+      Courses = courses;
     }
   }
 }

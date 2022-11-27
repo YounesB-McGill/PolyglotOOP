@@ -1,5 +1,7 @@
 {
   "files.associations": {
     "string": "cpp"
-  }
+  },
+  "omnisharp.enableRoslynAnalyzers": true,
+  "omnisharp.useModernNet": true
 }
