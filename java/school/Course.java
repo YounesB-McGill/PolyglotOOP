@@ -1,9 +1,9 @@
 package school;
 
-public class School {
+public class Course {
   private String name;
   
-  public School(String name) {
+  public Course(String name) {
     this.name = name;
   }
 
