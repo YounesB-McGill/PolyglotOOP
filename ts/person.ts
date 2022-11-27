@@ -1,4 +1,4 @@
-class Person {
+export class Person {
   name: String;
   email: String;
 
@@ -7,5 +7,3 @@ class Person {
     this.email = email;
   }
 }
-
-export { Person };

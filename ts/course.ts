@@ -1,4 +1,4 @@
-export class School {
+export class Course {
   name: string;
 
   constructor(name: string) {

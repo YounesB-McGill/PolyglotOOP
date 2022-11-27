@@ -1,12 +1,11 @@
+import { Course } from "./course";
 import { Person } from "./person";
 
-class Student extends Person {
-  courses: String[];
+export class Student extends Person {
+  courses: Course[];
 
-  constructor(name: String, email: String, courses: String[]) {
+  constructor(name: String, email: String, courses: Course[]) {
     super(name, email);
     this.courses = courses;
   }
 }
-
-export { Student };
