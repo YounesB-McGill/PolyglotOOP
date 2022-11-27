@@ -1,5 +1,5 @@
 package school
 
-class School(var name: String) {
+class Course(var name: String) {
   override def toString: String = name;
 }
