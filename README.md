@@ -34,3 +34,8 @@ classDiagram
 
 To run each example, run `make` in the directory of the language you want to run.
 For languages that require a build step, the build step is run automatically.
+
+Note that a `Makefile` is normally not needed for interpreted languages,
+such as JavaScript and Python, but it is used here
+to maintain consistency across the examples and to allow for automated testing
+in the future.
